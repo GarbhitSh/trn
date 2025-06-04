@@ -132,30 +132,6 @@ All gameplay actions use TRN's Fee Pallets:
 - **NFTs Collected**: 1.8 per user
 - **$ROOT Earned**: 0.45 average per game
 
-## 🔧 Development
-
-### **Project Structure**
-\`\`\`
-storyforge/
-├── app/                     # Next.js app router
-│   ├── game/               # Online multiplayer routes
-│   ├── local/              # Local multiplayer routes
-│   └── page.tsx            # Home page
-├── components/             # React components
-│   ├── ui/                 # Shadcn/ui components
-│   ├── wallet-connection.tsx
-│   └── game-board-visual.tsx
-├── hooks/                  # Custom React hooks
-│   ├── use-game-supabase.ts
-│   ├── use-game-local.ts
-│   └── use-trn-wallet.ts
-├── lib/                    # Utilities and game logic
-│   ├── trn/               # TRN blockchain integration
-│   ├── game-logic-*.ts    # Game mechanics
-│   └── supabase.ts        # Database client
-└── scripts/               # Database setup scripts
-\`\`\`
-
 ### **Key Components**
 - **Game Logic**: Modular game mechanics for local/online play
 - **TRN Integration**: Wallet, contracts, and blockchain features
@@ -181,34 +157,6 @@ storyforge/
 - **RPC**: https://rootscan.io/archive
 - **WebSocket**: wss://rootscan.io/live/ws
 - **Explorer**: https://rootscan.io
-
-### **API Keys** (Hardcoded)
-- **RPC API**: `2c0bd468-580e-41b9-979e-3eba235fb358`
-- **TRN API**: `e6f50477-d9b0-4936-9d02-a53147ea79f1`
-
-## 🚀 Deployment
-
-### **Vercel Deployment**
-1. Connect your GitHub repository to Vercel
-2. Add environment variables in Vercel dashboard
-3. Deploy automatically on push to main
-
-### **Environment Variables**
-\`\`\`bash
-# Supabase (Required for multiplayer)
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-# AI Storytelling (Optional)
-GEMINI_API_KEY=your_gemini_api_key
-\`\`\`
-
-### **Database Setup**
-1. Create a Supabase project
-2. Run the SQL scripts in order:
-   - `scripts/create-tables-v2.sql`
-   - `scripts/setup-database.sql`
-3. Enable real-time for all tables
 
 ## 🎯 TRN Game Forge Submission
 
@@ -256,12 +204,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Next.js**: For the incredible development experience
 - **Google Gemini**: For AI-powered storytelling
 
-## 📞 Contact
 
-- **Demo**: [Live Demo Link]
-- **GitHub**: [Repository Link]
-- **Team**: [Your Contact Info]
-- **TRN Game Forge**: Submission for $10k prize pool
 
 ---
 
