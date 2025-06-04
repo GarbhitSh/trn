@@ -315,5 +315,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ for the TRN Game Forge Competition**
 
 *Showcasing the future of blockchain gaming with gasless transactions, NFT collectibles, and real token rewards.*
-#   t r n  
+ 
  
